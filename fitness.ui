@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="button_pushups">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>90</y>
-      <width>371</width>
-      <height>81</height>
+      <x>220</x>
+      <y>360</y>
+      <width>261</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -35,10 +35,10 @@
    <widget class="QPushButton" name="button_sitsups">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>230</y>
-      <width>371</width>
-      <height>91</height>
+      <x>220</x>
+      <y>530</y>
+      <width>261</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -53,10 +53,10 @@
    <widget class="QPushButton" name="button_burpees">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>380</y>
-      <width>371</width>
-      <height>91</height>
+      <x>220</x>
+      <y>450</y>
+      <width>261</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -68,9 +68,37 @@
      <string>Burpees</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>331</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>media resources/pushup.gif</pixmap>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>80</y>
+      <width>201</width>
+      <height>151</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>button_sitsups</zorder>
    <zorder>button_burpees</zorder>
    <zorder>button_pushups</zorder>
+   <zorder>label</zorder>
+   <zorder>lcdNumber</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
