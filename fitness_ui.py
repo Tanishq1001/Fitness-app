@@ -60,6 +60,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.button_pushups.clicked.connect(self.show_pushup)
+        self.button_sitsups.clicked.connect(self.show_situp)
+        self.button_burpees.clicked.connect(self.show_burpees)
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -67,6 +70,14 @@ class Ui_MainWindow(object):
         self.button_sitsups.setText(_translate("MainWindow", "Sit-ups"))
         self.button_burpees.setText(_translate("MainWindow", "Burpees"))
 
+    def show_pushup(self):
+         self.label.setPixmap(QtGui.QPixmap("media resources/pushup.gif"))
+
+    def show_situp(self):
+         self.label.setPixmap(QtGui.QPixmap("media resources/situp.gif"))
+
+    def show_burpees(self):
+         self.label.setPixmap(QtGui.QPixmap("media resources/burpees.gif"))
 
 if __name__ == "__main__":
     import sys
