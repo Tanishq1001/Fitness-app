@@ -36,18 +36,14 @@ class Ui_MainWindow(object):
         self.button_burpees.setFont(font)
         self.button_burpees.setObjectName("button_burpees")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(60, 20, 331, 281))
+        self.label.setGeometry(QtCore.QRect(220, 30, 331, 281))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("media resources/pushup.gif"))
         self.label.setObjectName("label")
-        self.lcdNumber = QtWidgets.QLCDNumber(self.centralwidget)
-        self.lcdNumber.setGeometry(QtCore.QRect(430, 80, 201, 151))
-        self.lcdNumber.setObjectName("lcdNumber")
         self.button_sitsups.raise_()
         self.button_burpees.raise_()
         self.button_pushups.raise_()
         self.label.raise_()
-        self.lcdNumber.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 725, 21))
@@ -63,6 +59,7 @@ class Ui_MainWindow(object):
         self.button_pushups.clicked.connect(self.show_pushup)
         self.button_sitsups.clicked.connect(self.show_situp)
         self.button_burpees.clicked.connect(self.show_burpees)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -71,13 +68,14 @@ class Ui_MainWindow(object):
         self.button_burpees.setText(_translate("MainWindow", "Burpees"))
 
     def show_pushup(self):
-         self.label.setPixmap(QtGui.QPixmap("media resources/pushup.gif"))
+        self.label.setPixmap(QtGui.QPixmap("media resources/pushup.gif"))
 
     def show_situp(self):
-         self.label.setPixmap(QtGui.QPixmap("media resources/situp.gif"))
+        self.label.setPixmap(QtGui.QPixmap("media resources/Sit-up.gif"))
 
     def show_burpees(self):
-         self.label.setPixmap(QtGui.QPixmap("media resources/burpees.gif"))
+        self.label.setPixmap(QtGui.QPixmap("media resources/burpees.gif"))
+
 
 if __name__ == "__main__":
     import sys
